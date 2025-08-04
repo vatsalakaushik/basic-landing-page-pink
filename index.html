@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.content{
+margin: 0 auto;
+width: 60%;
+color:pink;
+background-color:white;
+font-size:"7"}
+
+.divider{
+display:block;
+margin: 20px auto;
+width:40%;
+}
+
+.tab-buttons{
+margin-top: 50px;
+text-align:center;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 20px;
+flex-wrap:wrap;}
+
+.tab{
+background-color:pink;
+padding: 10px 20px;
+margin:10px;
+border-radius:10px;
+border: none;
+color: white;
+font-weight: bold;
+border-radius: 10px;
+cursor: pointer;
+transition: background-color 0.3s ease;}
+.tab:hover {
+background-color: hotpink;
+transform: scale(1.05);}
+  .tab-content {
+      display: none;
+      margin-top: 30px;
+      padding: 20px;
+      border-top: 2px dashed pink;
+      width: 60%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+</style>
+<title> Basic Landing Page </title>
+</head>
+<body class="content">
+<h1 style="text-align:center">welcome my love</h1>
+<h2 style="text-align:center">i am vatsala</h2>
+<img src="C:\Users\VASU\Desktop\vatxala\front end\basic pg 1\divider1.jpg" class=divider>
+<div class="content">
+<h3><p><b>this is my landing page where i sell my dreams to you, for free. i hope that everything you can find in here is going to help you with your life and make your days magical. please browse the entire website and check out my other social media pages as well. blah lbah blah blAH BLAH BLAHHHHH blah text text text text text text textieee textiesssss textiesisisi hehsieisisis. not many people are into blogging and websites however if u are then i hope you like this lil piece of art! art art art pinkkkkkk pinkkk pink aesthetic witchy witdchy lana fucking del rey laNAAAAAA DEL REYYYY lana lana lana lanalana sample txty sample txt sample txt slay mwah bye bye lovessssss.</b></p></h3>
+</div>
+<img src="C:\Users\VASU\Desktop\vatxala\front end\basic pg 1\divider1.jpg" class=divider>
+<div class="tab-buttons">
+<button class="tab" onclick="showTab('home')">Home</button>
+<button class="tab" onclick="showTab('about')">About</button>
+<button class="tab" onclick="showTab('contact')">Contact</button>
+</div>
+
+<div id="home" class="tab-content active">
+<h2>Welcome to Home 💖</h2>
+<p>This is the home tab. Magic starts here ✨</p>
+</div>
+
+  <div id="about" class="tab-content">
+    <h2>About Me 🌸</h2>
+    <p>I’m Vatsala and this website is my little dream world 🌙</p>
+  </div>
+
+  <div id="contact" class="tab-content">
+    <h2>Contact 💌</h2>
+    <p>Slide into my DMs on Instagram or send a virtual hug via email!</p>
+  </div>
+
+ <script>
+    function showTab(tabId) {
+      const tabs = document.querySelectorAll('.tab-content');
+      tabs.forEach(tab => tab.classList.remove('active'));
+
+      const selectedTab = document.getElementById(tabId);
+      selectedTab.classList.add('active');
+    }
+  </script>
+
+</body>
+</html>
